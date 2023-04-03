@@ -40,6 +40,8 @@ namespace ProductApps
                 MessageBox.Show("Enter data again", "Data Entry Error");
             }
             totalChargeTextBox.Text = Convert.ToString(cProduct.TotalPayment + 25);
+
+            totalChargeTextBoxwrap.Text = Convert.ToString(cProduct.TotalPayment + 25 + 5);
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
