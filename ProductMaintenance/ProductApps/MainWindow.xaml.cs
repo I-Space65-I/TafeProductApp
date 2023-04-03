@@ -42,6 +42,11 @@ namespace ProductApps
             totalChargeTextBox.Text = Convert.ToString(cProduct.TotalPayment + 25);
 
             totalChargeTextBoxwrap.Text = Convert.ToString(cProduct.TotalPayment + 25 + 5);
+
+            decimal GST_Rate = 1.1m;
+            decimal TotalCharge = cProduct.TotalPayment + 25 + 5;
+            decimal TotalCharge2 = GST_Rate * TotalCharge;
+            GSTText.Text = Convert.ToString(TotalCharge2);
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
